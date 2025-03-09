@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+ background-image: url("media/bg.jpg");
+ background-position: center center;
+ background-repeat: none;
+ background-size: max(1200px, 100vw);
+ height: 90vh;
+ position: relative;
+}
+.main .container{
+  height: 90vh;
+  width: 100%;
+  opacity: 0.55;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+nav, .hero{
+  position: relative;
+  z-index: 10;
+}
+nav select{
+  padding: 3px 7px;
+  border: 2px solid white;
+  font-size: 15px; 
+  background: transparent;
+  border-radius: 5px;
+}
+
+nav button{
+  padding: 3px 10px;
+  border: 2px solid red;
+  background-color: red;
+  font-size: 15px; 
+  border-radius: 5px;
+}
+.hero span:nth-child(1){
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 25vh;
+  
+}
+.hero span:nth-child(2){
+  font-size: 25px;
+}
+.hero span:nth-child(3){
+  font-size: 18px;
+}
+.lower input{
+  border: 1px solid rgb(137, 132, 132);
+  padding: 7px 101px 7px 14px;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0.65;
+
+}
+.lower button{
+  padding: 7px 14px;
+  border: 1px solid white;
+  background-color: red;
+  font-size: 20px; 
+  border-radius: 5px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+}
+.hero{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:24px;
+  padding: 0 24px;
+
+}
+.lower, .buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.section1{
+  border-top: 7px solid rgb(61, 56, 56);
+}
+.section{
+  border-bottom: 7px solid rgb(61, 56, 56);
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1px;
+  background-color: black;
+  flex-wrap: wrap;
+}
+.section span:first-child{
+  font-size: 50px;
+  font-weight: bold;
+  padding: 23px 0;
+}
+.section span:nth-child(2){
+  font-size: 24px;
+}
+.section img{
+  width: 555px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30vw;
+}
+.section6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: auto;
+  border-bottom: 7px solid rgb(61, 56, 56);
+  padding-bottom: 50px;
+  background-color: black;
+}
+.section6 > span{
+  font-size: 50px;
+  font-weight: bold;
+  padding:24px;
+  text-align: center;
+}
+.section6 .faq{
+  height: 10vh;
+  width: 60vw;
+  margin: 20px;
+  font-size: 24px;
+  background-color: rgb(47, 44, 44);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-out 0.3s;
+}
+.section6 .faq:hover{
+  background-color: rgb(125, 113, 113);
+}
+.footer{
+  max-width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  align-content:center; 
+  padding-bottom: 50px;
+}
+footer .questions{
+  padding: 34px 0;
+
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: left;
+  justify-content: center; 
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.display{
+  position: relative;
+}
+.display img{
+  position: relative;
+  z-index: 10;
+
+}
+.display video{
+  position: absolute;
+  left: 75px;
+  top:88px;
+  width:400px;
+}
+@media screen and (max-width: 1300px) {
+  .hero span:nth-child(1){
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15vh;
+    
+  }
+  .section1{
+    height: 100%;
+  }
+  .hero span:nth-child(2){
+    font-size: 18px;
+  }
+  .hero span:nth-child(3){
+    font-size: 15px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    padding-left: 0;
+  }
+  .display img{
+    width: 350px
+
+  }
+  .display video{
+    position: absolute;
+    left: 45px;
+    top:55px;
+    width:260px;
+  }
+  .section{
+    height: 100%;
+  }
+  .extra img{
+    width:350px;
+    overflow: hidden;
+  }
+  .extra .box{
+    padding-bottom: 30px;
+  }
+  .footer{
+    max-width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-content:center; 
+    text-align: left;
+  }
+  footer .questions{
+    margin-bottom: 50px;
+  }
+
+}
+
+
+
