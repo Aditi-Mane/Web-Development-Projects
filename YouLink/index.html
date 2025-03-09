@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouLink</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+  
+  <header>
+    <img class="logo" src="media/youlink.png" alt="logo">
+  </header>
+  <div class="container">
+    <h1>Watch Hindi movies for free</h1>
+    <h2>via. YouTube</h2>
+    <p>Making finding movies easier</p>
+  </div>
+  <nav>
+    <ul class="nav">
+      <li><button><a href="#hindi_movies">Explore</a></button></li>
+      <li><button><a href="#suggest_movie">Suggest a Movie</a></button></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="hindi_movies">
+      <h1 class="white">Hindi Movies</h1>
+      <div class="movies-container">
+        <div class="movie-box">
+            <img src="media/Yeh-Jawaani-Hai-Deewani.jpg" alt="Yeh Jawani Hai Deewani">
+            <h3>Yeh Jawani Hai Deewani</h3>
+            <h4>Duration: 2h 40 min</h4>
+            <p>Naina, a studious girl, yearns for some fun. A chance meeting with an old classmate, Aditi, leads to a trip that changes her life forever. She meets and falls for Bunny, but he has no time for love.</p>
+            <a href="https://youtu.be/WiaHoVh4lXc?si=VbKT1HF2x76a6DNu" target="_blank">
+                <button>Watch Now</button>
+            </a>
+        </div>
+        <div class="movie-box">
+            <img src="media/Jab we met.jpeg" alt="Jab we met">
+            <h3>Jab We Met</h3>
+            <h4>Duration: 2h 18 min</h4>
+            <p>Aditya, a heartbroken tycoon on the verge of committing suicide, aimlessly boards a train. He meets Geet, a bubbly girl who plans to elope with her lover, and finds himself pulled into her crazy life.</p>
+            <a href="https://youtu.be/sosEqOCgYNQ?si=HcUpwh4lTKLSLLuk" target="_blank">
+                <button>Watch Now</button>
+            </a>
+        </div>
+        <div class="movie-box">
+            <img src="media/znmd.jpeg" alt="Zindagi na milegi Dobara">
+            <h3>Zindagi na milegi Dobara</h3>
+            <h4>Duration: 2h 34 min</h4>
+            <p>Friends Kabir, Imran and Arjun take a vacation in Spain before Kabir's marriage. The trip turns into an opportunity to mend fences, heal wounds, fall in love with life and combat their worst fears.</p>
+            <a href="https://youtu.be/5VMLe9c-mpg?si=yu5iZOp3_bNGbKMl" target="_blank">
+                <button>Watch Now</button>
+            </a>
+        </div>
+        <div class="movie-box">
+            <img src="media/Wake Up Sid.jpeg" alt="Wake Up Sid">
+            <h3>Wake Up Sid</h3>
+            <h4>Duration: 2h 19 min</h4>
+            <p>Siddharth Mehra is a spoilt and selfish college student with a carefree approach. However, he learns valuable life lessons from Aisha Banerjee, an aspiring writer from Kolkata.</p>
+            <a href="https://youtu.be/Uv8qyr5vc-o?si=29Tc_xsO8dQdSRIG" target="_blank">
+                <button>Watch Now</button>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <section id="suggest_movie">
+      <h1>Suggest a Movie to add :</h1>
+      <h3>Your suggestions will help us add in more free movies available on YOUTUBE!</h3>
+      <form action="https://sheetdb.io/api/v1/lx1trauf0wm3f" method="post" id="sheetdb-form">
+        <label for="movie_name">Movie Name:</label>
+        <input type="text" name="data[Movie]" required>
+        <label for="movie_url">YouTube URL:</label>
+        <input type="url" name="data[URL]" required>
+        <button type="submit">Submit Suggestion</button>
+      </form>
+      <script src="script.js"></script>
+    </section>
+
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="media/video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <h2 class="white">Contact Us</h2>
+      <p>Email: onelifefilm2024@gmail.com</p>
+      <p>Phone: +91 9922334324</p>
+      <p>Follow us on: 
+        <a href="https://facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://twitter.com" target="_blank">Twitter</a> | 
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
